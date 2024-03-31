@@ -82,9 +82,6 @@ app.delete("/products/:id", async (req, res) => {
   }
 });
 
-console.log("ENNNN", process.env.MONGO_DB);
-console.log("ENNNN", process.env.TEST);
-
 mongoose
   .connect(`mongodb+srv://${process.env.MONGO_DB}`)
   .then(() => {
